@@ -6,9 +6,10 @@ package com.sandlex.euler;
 public class Problem010 {
 
     public static void main(String[] args) {
-        int num = 1, sum = 0;
-        while (num < 2000000) {
-            if (isPrime(++num)) {
+        int num = 1;
+        long sum = 0;
+        while (++num <= 2000000) {
+            if (isPrime(num)) {
                 sum += num;
             }
         }
